@@ -10,10 +10,10 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
 
+import { AppDataProvider } from "@/components/AppDataProvider";
 import { AppSettingsProvider } from "@/components/AppSettingsProvider";
 import { SwrProvider } from "@/components/SwrProvider";
 import { useColorScheme } from "@/components/useColorScheme";
-import { AppDataProvider } from "@/components/AppDataProvider";
 
 export {
   // Catch any errors thrown by the Layout component.

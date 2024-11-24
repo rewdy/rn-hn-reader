@@ -7,18 +7,18 @@ import { getUrlParts } from "@/helpers/url";
 import type { HackerNewsItem } from "@/models/hacker-news.api";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import type React from "react";
+import { useRef } from "react";
 import { Button, Pressable, StyleSheet, useColorScheme } from "react-native";
 import Swipeable, {
   type SwipeableMethods,
 } from "react-native-gesture-handler/ReanimatedSwipeable";
-import useSWR from "swr";
-import { ExternalLinkOrNot } from "./ExternalLinkOrNot";
-import { useRef } from "react";
 import Reanimated, {
   type SharedValue,
   useAnimatedStyle,
 } from "react-native-reanimated";
+import useSWR from "swr";
 import { useAppData } from "./AppDataProvider";
+import { ExternalLinkOrNot } from "./ExternalLinkOrNot";
 
 // Styling vars
 const iconSize = 14;

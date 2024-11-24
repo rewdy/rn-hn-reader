@@ -1,10 +1,10 @@
+import Colors from "@/constants/Colors";
 import { sharedStyles } from "@/constants/sharedStyles";
 import type React from "react";
 import { FlatList, RefreshControl, useColorScheme } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { StoryItem } from "./StoryItem";
-import { View, Text } from "./Themed";
-import Colors from "@/constants/Colors";
+import { Text, View } from "./Themed";
 
 export type StoryListProps = {
   header?: React.ReactNode;

@@ -1,10 +1,10 @@
+import { useAsyncStorage } from "@react-native-async-storage/async-storage";
 import React, {
   createContext,
   useState,
   useEffect,
   type ReactNode,
 } from "react";
-import { useAsyncStorage } from "@react-native-async-storage/async-storage";
 
 type AppDataContextProps = {
   favorites: string[];

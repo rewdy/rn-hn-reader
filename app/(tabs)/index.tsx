@@ -1,9 +1,9 @@
+import { StoryList } from "@/components/StoryList";
 import { Text, View } from "@/components/Themed";
 import { HN_API_BASE } from "@/constants/api";
+import { sharedStyles } from "@/constants/sharedStyles";
 import { fetcher } from "@/helpers/fetcher";
 import useSWR from "swr";
-import { StoryList } from "@/components/StoryList";
-import { sharedStyles } from "@/constants/sharedStyles";
 
 export default function TabOneScreen() {
   const { data, isValidating, error, mutate } = useSWR<string[]>(
